@@ -17,7 +17,7 @@
                 MODAL.LESS
 -----------------------------------------*/
 body {
-  padding-right: 0 !important;
+  padding-right: 0;
 }
 .modal .modal-header {
   background-color: #6E348C;
@@ -190,6 +190,17 @@ ul.columns.col-2 > li:first-child {
 /*-----------------------------------------
                 ICONS.LESS
 -----------------------------------------*/
+.glyphicon,
+i,
+.fa {
+  cursor: pointer;
+  color: #9D9D9D;
+}
+.glyphicon:hover,
+i:hover,
+.fa:hover {
+  color: #000000;
+}
 
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
