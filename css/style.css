@@ -13,6 +13,7 @@
 /*  750px   */
 /*  100%    */
 /*  100%    */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*-----------------------------------------
                 MODAL.LESS
 -----------------------------------------*/
@@ -60,6 +61,7 @@ body {
 /*  750px   */
 /*  100%    */
 /*  100%    */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*-----------------------------------------
               BUTTON.LESS
 -----------------------------------------*/
@@ -152,6 +154,7 @@ input[type="submit"]:hover i {
 /*  750px   */
 /*  100%    */
 /*  100%    */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*-----------------------------------------
             COLUMN.LESS
 -----------------------------------------*/
@@ -176,6 +179,7 @@ ul.columns.col-2 > li:first-child {
 /*  750px   */
 /*  100%    */
 /*  100%    */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*-----------------------------------------
                 FORM.LESS
 -----------------------------------------*/
@@ -187,6 +191,7 @@ ul.columns.col-2 > li:first-child {
 /*  750px   */
 /*  100%    */
 /*  100%    */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*-----------------------------------------
                 ICONS.LESS
 -----------------------------------------*/
@@ -209,10 +214,12 @@ i:hover,
 /*  750px   */
 /*  100%    */
 /*  100%    */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*-----------------------------------------
             PANEL.LESS
 -----------------------------------------*/
-.panel {
+.panel,
+.pane {
   overflow: hidden;
   width: 100%;
   margin: 0;
@@ -223,67 +230,93 @@ i:hover,
   box-shadow: none;
   border-radius: 0px;
 }
-.panel ul {
+.panel ul,
+.pane ul {
   margin: 0;
 }
-.panel.main {
+.panel.main,
+.pane.main {
   margin-bottom: 10px;
 }
-.panel.body {
+.panel.body,
+.pane.body {
   background-color: #FFFFFF;
   color: #9D9D9D;
 }
-.panel.content {
+.panel.content,
+.pane.content {
   background-color: #FFFFFF;
   color: #9D9D9D;
   padding: 10px 10px 0px 10px;
   margin: 0;
 }
-.panel.content:first-child {
+.panel.content:first-child,
+.pane.content:first-child {
   padding-top: 10px;
 }
-.panel.content:last-child {
+.panel.content:last-child,
+.pane.content:last-child {
   padding-bottom: 10px;
 }
-.panel.rounded {
+.panel.rounded,
+.pane.rounded,
+.panel.round,
+.pane.round {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-.panel.rounded.top {
+.panel.rounded.top,
+.pane.rounded.top,
+.panel.round.top,
+.pane.round.top {
   border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px 5px 0px 0px;
   -webkit-border-radius: 5px 5px 0px 0px;
 }
-.panel.rounded.bottom {
+.panel.rounded.bottom,
+.pane.rounded.bottom,
+.panel.round.bottom,
+.pane.round.bottom {
   border-radius: 0px 0px 5px 5px;
   -moz-border-radius: 0px 0px 5px 5px;
   -webkit-border-radius: 0px 0px 5px 5px;
 }
-.panel.rounded.left {
+.panel.rounded.left,
+.pane.rounded.left,
+.panel.round.left,
+.pane.round.left {
   border-radius: 5px 0px 0px 5px;
   -moz-border-radius: 5px 0px 0px 5px;
   -webkit-border-radius: 5px 0px 0px 5px;
 }
-.panel.rounded.right {
+.panel.rounded.right,
+.pane.rounded.right,
+.panel.round.right,
+.pane.round.right {
   border-radius: 0px 5px 5px 0px;
   -moz-border-radius: 0px 5px 5px 0px;
   -webkit-border-radius: 0px 5px 5px 0px;
 }
-.panel.header {
+.panel.header,
+.pane.header {
   background-color: #6E348C;
   font-size: 20px;
 }
-.panel.header * {
+.panel.header *,
+.pane.header * {
   color: #fff;
 }
-.panel.header .title {
+.panel.header .title,
+.pane.header .title {
   padding: 12px 10px;
 }
-.panel span {
+.panel span,
+.pane span {
   display: block;
 }
-.panel.footer {
+.panel.footer,
+.pane.footer {
   padding: 5px;
   text-align: center;
   transition: ease all 0.5s;
@@ -291,17 +324,21 @@ i:hover,
   border: 4px solid #6E348C;
   border-top: none;
 }
-.panel.footer:hover {
+.panel.footer:hover,
+.pane.footer:hover {
   background-color: #6E348C;
 }
-.panel.wrapper {
+.panel.wrapper,
+.pane.wrapper {
   background-color: #fff;
   border: 4px solid #6E348C;
 }
-.panel.no-padding {
+.panel.no-padding,
+.pane.no-padding {
   padding: 10px;
 }
-.panel.no-margin {
+.panel.no-margin,
+.pane.no-margin {
   margin: 0;
 }
 .custom-panel-list .panel.header {
@@ -342,6 +379,7 @@ i:hover,
 /*  750px   */
 /*  100%    */
 /*  100%    */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*-----------------------------------------
             SECTION.LESS
 -----------------------------------------*/
@@ -363,6 +401,7 @@ i:hover,
 /*  750px   */
 /*  100%    */
 /*  100%    */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*-----------------------------------------
             TABLE.LESS
 -----------------------------------------*/
