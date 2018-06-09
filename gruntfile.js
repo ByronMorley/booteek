@@ -41,5 +41,5 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('default', ['less', 'cssmin','watch']);
+    grunt.registerTask('booteek', ['less', 'cssmin','watch']);
 };

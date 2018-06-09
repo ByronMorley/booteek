@@ -1395,7 +1395,6 @@ address {
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1403,9 +1402,6 @@ address {
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
                 MODAL.LESS
 -----------------------------------------*/
@@ -1446,7 +1442,6 @@ body {
   display: none;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1454,9 +1449,6 @@ body {
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
               BUTTON.LESS
 -----------------------------------------*/
@@ -1542,7 +1534,6 @@ input[type="submit"]:hover i {
   margin: 5px 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1550,9 +1541,6 @@ input[type="submit"]:hover i {
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
             COLUMN.LESS
 -----------------------------------------*/
@@ -1570,7 +1558,6 @@ ul.columns.col-2 > li:first-child {
   margin-left: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1578,14 +1565,10 @@ ul.columns.col-2 > li:first-child {
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
                 FORM.LESS
 -----------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1593,9 +1576,6 @@ body {
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
                 ICONS.LESS
 -----------------------------------------*/
@@ -1611,7 +1591,6 @@ i:hover,
   color: #000000;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1619,9 +1598,6 @@ i:hover,
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
             PANEL.LESS
 -----------------------------------------*/
@@ -1723,7 +1699,6 @@ body {
   margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1731,9 +1706,6 @@ body {
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
             PANEL.LESS
 -----------------------------------------*/
@@ -1891,7 +1863,6 @@ body {
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1899,9 +1870,6 @@ body {
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
             SECTION.LESS
 -----------------------------------------*/
@@ -1916,7 +1884,6 @@ body {
   float: right;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 /*--------------------------- CONFIG.LESS --------------------------------*/
 /*  1170px  */
 /*  1170px  */
@@ -1924,9 +1891,6 @@ body {
 /*  750px   */
 /*  100%    */
 /*  100%    */
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 /*-----------------------------------------
             TABLE.LESS
 -----------------------------------------*/
