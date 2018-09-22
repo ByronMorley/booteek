@@ -77,18 +77,6 @@ a:focus {
 .anim-colorgraph > li:nth-child(6) {
   background-color: #A2C614;
 }
-.button {
-  color: #FFFFFF !important;
-  background-color: #6E348C;
-  padding: 10px 20px;
-  border: 1px solid #6E348C;
-  transition: 0.5s ease all;
-}
-.button:hover {
-  border: 1px solid #6E348C !important;
-  background-color: #FFFFFF;
-  color: #6E348C !important;
-}
 .box-shadow {
   -webkit-box-shadow: 0px 14px 101px -58px #000000;
   -moz-box-shadow: 0px 14px 101px -58px #000000;
@@ -1094,7 +1082,7 @@ th {
     opacity: 0;
   }
 }
-@-moz-keyframes fadeOu {
+@-moz-keyframes fadeOut {
   from {
     opacity: 1;
   }
@@ -1105,6 +1093,54 @@ th {
 @-webkit-keyframes fadeOut {
   from {
     opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeInHalf {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@-moz-keyframes fadeInHalf {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes fadeInHalf {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeOutHalf {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOutHalf {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOutHalf {
+  from {
+    opacity: 0.5;
   }
   to {
     opacity: 0;
@@ -1483,53 +1519,79 @@ body {
 /*-----------------------------------------
               BUTTON.LESS
 -----------------------------------------*/
+.button,
 button,
 input[type="submit"] {
+  transition: 0.5s ease all;
   background-color: #A2C614;
   color: #fff;
   margin: 5px 0;
   padding: 10px;
   border: 1px solid #A2C614;
-  line-height: 20px;
+  text-align: center;
 }
+.button.inactive,
 button.inactive,
-input[type="submit"].inactive {
-  background-color: #aaa;
-  color: #fff;
-  border: 1px solid #aaa;
+input[type="submit"].inactive,
+.button.disabled,
+button.disabled,
+input[type="submit"].disabled,
+.button input[disabled="disabled"],
+button input[disabled="disabled"],
+input[type="submit"] input[disabled="disabled"] {
+  background-color: #aaa !important;
+  color: #fff !important;
+  border: 1px solid #aaa !important;
+  pointer-events: none;
+  cursor: not-allowed;
 }
+.button.inactive:hover,
 button.inactive:hover,
-input[type="submit"].inactive:hover {
-  background-color: #aaa;
-  color: #fff;
-  border: 1px solid #aaa;
+input[type="submit"].inactive:hover,
+.button.disabled:hover,
+button.disabled:hover,
+input[type="submit"].disabled:hover,
+.button input[disabled="disabled"]:hover,
+button input[disabled="disabled"]:hover,
+input[type="submit"] input[disabled="disabled"]:hover {
+  background-color: #aaa !important;
+  color: #fff !important;
+  border: 1px solid #aaa !important;
 }
+.button.inactive:hover i,
 button.inactive:hover i,
-input[type="submit"].inactive:hover i {
-  color: #fff;
+input[type="submit"].inactive:hover i,
+.button.disabled:hover i,
+button.disabled:hover i,
+input[type="submit"].disabled:hover i,
+.button input[disabled="disabled"]:hover i,
+button input[disabled="disabled"]:hover i,
+input[type="submit"] input[disabled="disabled"]:hover i {
+  color: #fff !important;
 }
-button:last-child,
-input[type="submit"]:last-child {
-  margin-right: 5px;
-}
+.button .text,
 button .text,
 input[type="submit"] .text {
   font-size: 14px;
   float: left;
 }
+.button i,
 button i,
 input[type="submit"] i {
   float: left;
   color: #fff;
 }
+.button i.with-text,
 button i.with-text,
 input[type="submit"] i.with-text {
   padding-left: 10px;
 }
+.button .fa,
 button .fa,
 input[type="submit"] .fa {
   font-size: 16px;
 }
+.button.enter-button,
 button.enter-button,
 input[type="submit"].enter-button {
   height: 30px;
@@ -1537,6 +1599,7 @@ input[type="submit"].enter-button {
   padding: 0;
   margin: 5px;
 }
+.button.enter-button i,
 button.enter-button i,
 input[type="submit"].enter-button i {
   text-align: center;
@@ -1545,11 +1608,13 @@ input[type="submit"].enter-button i {
   width: 100%;
   font-size: 18px;
 }
+.button:hover,
 button:hover,
 input[type="submit"]:hover {
   background-color: #fff;
   color: #A2C614;
 }
+.button:hover i,
 button:hover i,
 input[type="submit"]:hover i {
   color: #A2C614;
@@ -2000,6 +2065,69 @@ input[type=range][orient=vertical] {
   width: 6px;
   height: 300px;
   padding: 0 5px;
+}
+
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #ffffff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .breadcrumbnavigation {
